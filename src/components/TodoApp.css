@@ -1,0 +1,46 @@
+.TodosList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+tr:nth-child(even):not(:nth-child(1)) {
+  background-color: lightgray;
+}
+thead {
+  background-color: #333;
+  color: white;
+}
+td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 3px;
+}
+
+th {
+  text-align: center;
+  padding: 10px;
+}
+.addTodo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+input[type="text"] {
+  padding: 5px 10px;
+  width: 100%;
+}
+.add {
+  margin-top: 5px;
+  width: 50%;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
